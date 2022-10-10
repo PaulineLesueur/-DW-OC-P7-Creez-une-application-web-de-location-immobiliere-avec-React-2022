@@ -1,12 +1,11 @@
 import React from 'react';
-import './style/index.css';
-import Home from './pages/Home';
-import ErrorPage from './pages/ErrorPage';
-import Housing from './pages/Housing';
-import About from './pages/About';
+import Home from '../pages/Home';
+import ErrorPage from '../pages/ErrorPage';
+import Housing from '../pages/Housing';
+import About from '../pages/About';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-function App() {
+function Router() {
     return (
         <BrowserRouter>
             <Routes>
@@ -19,4 +18,4 @@ function App() {
     )
 }
 
-export default App;
+export default Router;

@@ -1,0 +1,10 @@
+@import 'reset';
+@import 'header';
+@import 'variables';
+
+body {
+    padding: 20px;
+    font-family: $primaryFont;
+    font-size: 12px;
+    color: $primaryColor;
+}
