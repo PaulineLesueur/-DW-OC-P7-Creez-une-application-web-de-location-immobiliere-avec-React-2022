@@ -5,6 +5,10 @@ header {
     justify-content: space-between;
     align-items: center;
 
+    svg.desktop-version {
+        display: none;
+    }
+
     nav {
         a {
             font-weight: 500;
@@ -17,10 +21,32 @@ header {
             display: none;
 
             a:nth-child(2) {
-                margin-left: 10px;
+                margin-left: 57px;
             }
         }
     }
+}
 
-    
+@media (min-width: 1024px) {
+    header {
+        svg.desktop-version {
+            display: block;
+        }
+
+        svg.mobile-version {
+            display: none;
+        }
+        nav.desktop-nav {
+            display: block;
+            
+            a {
+                font-size: 24px;
+                text-transform: none;
+            }
+        }
+
+        .burger-menu {
+            display: none;
+        }
+    }
 }
