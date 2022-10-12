@@ -37,8 +37,8 @@ header nav.desktop-nav a:nth-child(2) {
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
-  height: 35px;
-  width: 35px;
+  height: 45px !important;
+  width: 100% !important;
 }
 
 /* Color/shape of close button cross */
