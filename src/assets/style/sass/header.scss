@@ -6,14 +6,21 @@ header {
     align-items: center;
 
     nav {
-        a{
+        a {
             font-weight: 500;
             text-decoration: none;
             text-transform: uppercase;
             color: $primaryColor;
-                &:nth-child(2) {
-                    margin-left: 10px;
-                }
-        }   
+        }
+
+        &.desktop-nav {
+            display: none;
+
+            a:nth-child(2) {
+                margin-left: 10px;
+            }
+        }
     }
+
+    
 }

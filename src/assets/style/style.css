@@ -14,8 +14,72 @@ header nav a {
   text-transform: uppercase;
   color: #FF6060;
 }
-header nav a:nth-child(2) {
+header nav.desktop-nav {
+  display: none;
+}
+header nav.desktop-nav a:nth-child(2) {
   margin-left: 10px;
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: absolute;
+  width: 36px;
+  height: 30px;
+  right: 20px;
+  top: 30px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #FF6060;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 35px;
+  width: 35px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  width: 4px !important;
+  height: 25px !important;
+  background: #C4C4C4;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  top: 0;
+  right: 0px;
+  z-index: 1100;
+  height: 100%;
+  transition: all 0.5s ease 0s;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: 5px 0px 15px #C4C4C4;
+  background: white;
+  padding: 65px 20px;
+  font-size: 16px;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: auto;
+  text-align: right;
+  line-height: 35px;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
 }
 
 body {
