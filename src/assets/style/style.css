@@ -119,6 +119,41 @@ footer span {
   color: white;
 }
 
+main.error-page {
+  min-height: 63vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .error-page {
+  padding: 37px;
+  margin: auto;
+  font-size: 18px;
+  text-align: center;
+}
+main .error-page span {
+  font-size: 96px;
+  font-weight: 700;
+}
+main .error-page p {
+  margin-bottom: 133px;
+}
+main .error-page a {
+  font-size: 14px;
+  color: #FF6060;
+}
+
+@media (min-width: 1024px) {
+  main .error-page {
+    font-size: 36px;
+  }
+  main .error-page span {
+    font-size: 288px;
+  }
+  main .error-page a {
+    font-size: 18px;
+  }
+}
 body {
   padding: 20px;
   font-family: "Montserrat", sans-serif;

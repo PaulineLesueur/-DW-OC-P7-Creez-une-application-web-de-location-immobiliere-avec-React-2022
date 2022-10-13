@@ -1,0 +1,48 @@
+@import 'variables';
+
+main {
+    &.error-page {
+        min-height: 63vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .error-page {
+        padding: 37px;
+        margin: auto;
+        font-size: 18px;
+        text-align: center;
+
+        span {
+            font-size: 96px;
+            font-weight: 700;
+        }
+
+        p {
+            margin-bottom: 133px;
+        }
+
+        a {
+            font-size: 14px;
+            color: $primaryColor
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        .error-page {
+            font-size: 36px;
+
+            span {
+                font-size: 288px;
+            }
+
+            a {
+                font-size: 18px;
+            }
+        }
+    }
+
+}
