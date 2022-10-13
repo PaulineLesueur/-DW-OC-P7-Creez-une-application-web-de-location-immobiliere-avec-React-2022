@@ -13,3 +13,13 @@ footer {
         color: white;
     }
 }
+
+@media (min-width: 1024px) {
+    footer {
+        margin-left: -100px;
+
+        main.error-page {
+            padding-bottom: 159px;
+        }
+    }
+}

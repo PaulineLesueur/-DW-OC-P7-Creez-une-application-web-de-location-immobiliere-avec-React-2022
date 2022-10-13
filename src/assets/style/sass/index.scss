@@ -15,6 +15,10 @@ body {
         display: flex;
         flex-direction: column;
     }
+
+    main {
+        min-height: 68vh;
+    }
 }
 
 @media (min-width: 1024px) {

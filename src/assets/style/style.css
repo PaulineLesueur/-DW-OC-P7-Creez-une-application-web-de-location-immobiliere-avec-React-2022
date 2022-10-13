@@ -117,8 +117,15 @@ footer span {
   color: white;
 }
 
+@media (min-width: 1024px) {
+  footer {
+    margin-left: -100px;
+  }
+  footer main.error-page {
+    padding-bottom: 159px;
+  }
+}
 main.error-page {
-  min-height: 68vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,6 +168,9 @@ body {
 body #root {
   display: flex;
   flex-direction: column;
+}
+body main {
+  min-height: 68vh;
 }
 
 @media (min-width: 1024px) {
