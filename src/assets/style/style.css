@@ -120,7 +120,7 @@ footer span {
 }
 
 main.error-page {
-  min-height: 63vh;
+  min-height: 68vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,6 +159,10 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
   color: #FF6060;
+}
+body #root {
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: 1024px) {
