@@ -31,6 +31,10 @@ main {
 
 @media (min-width: 1024px) {
     main {
+        &.error-page {
+            padding-bottom: 159px;
+        }
+        
         .error-page {
             font-size: 36px;
 
