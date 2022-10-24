@@ -4,6 +4,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
 
     svg.desktop-version {
         display: none;
@@ -29,6 +30,8 @@ header {
 
 @media (min-width: 1024px) {
     header {
+        padding: 40px 100px 20px 100px;
+
         svg.desktop-version {
             display: block;
         }

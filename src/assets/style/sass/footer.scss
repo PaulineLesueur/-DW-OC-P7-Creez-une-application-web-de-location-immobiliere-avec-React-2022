@@ -1,13 +1,9 @@
 footer {
-    position :absolute;
-    bottom: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100vw;
     height: 209px;
-    margin: 0 0 -40px -20px;
     background-color: black;
 
     span {
@@ -18,7 +14,6 @@ footer {
 
 @media (min-width: 1024px) {
     footer {
-        margin-left: -100px;
 
         main.error-page {
             padding-bottom: 159px;

@@ -6,6 +6,9 @@ function Home() {
   return (
       <React.Fragment>
         <Header />
+        <main>
+            Main content
+        </main>
         <Footer />
       </React.Fragment>
   );
