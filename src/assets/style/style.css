@@ -124,6 +124,42 @@ footer span {
     padding-bottom: 159px;
   }
 }
+main.home-page .banner {
+  display: flex;
+  align-items: center;
+  height: 111px;
+  overflow: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/cliff-home-page.png");
+  background-position: bottom center;
+  background-size: cover;
+  border-radius: 10px;
+  line-height: 24px;
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+}
+main.home-page .banner p {
+  padding: 0px 15px;
+}
+
+@media (min-width: 740px) {
+  main.home-page .banner {
+    justify-content: center;
+  }
+  main.home-page .banner br {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  main.home-page {
+    max-width: 1240px;
+  }
+  main.home-page .banner {
+    height: 223px;
+    margin: 30px auto auto auto;
+    font-size: 48px;
+  }
+}
 main.error-page {
   display: flex;
   justify-content: center;

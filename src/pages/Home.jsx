@@ -6,8 +6,10 @@ function Home() {
   return (
       <React.Fragment>
         <Header />
-        <main>
-            Main content
+        <main className='home-page'>
+            <div className="banner">
+              <p>Chez vous,<br /> partout et ailleurs</p>
+            </div>
         </main>
         <Footer />
       </React.Fragment>
