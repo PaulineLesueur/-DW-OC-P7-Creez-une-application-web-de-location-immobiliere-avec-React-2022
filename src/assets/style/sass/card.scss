@@ -1,1 +1,47 @@
 @import 'variables';
+
+.cards-container {
+    display: grid;
+    grid-row-gap: 20px;
+
+    .card {
+        display: flex;
+        align-items: flex-end;
+        height: 255px;
+        overflow: hidden;
+        border-radius: 10px;
+        background-size: cover;
+
+        h2 {
+            padding: 20px;
+            font-size: 18px;
+            font-weight: 500;
+            color: white;
+        }
+    }
+}
+
+@media (min-width: 820px) {
+    .cards-container {
+        grid-template-columns: 48% 49%;
+        grid-column-gap: 20px;
+        background-color: $secondaryColor;
+        padding: 20px;
+        border-radius: 25px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .cards-container {
+        grid-template-columns: 30% 30% 30%;
+        grid-column-gap: 50px;
+        grid-row-gap: 50px;
+        padding: 50px;
+    }
+}
+
+@media (min-width: 1450px) {
+    .cards-container .card{
+        height: 340px;
+    }
+}

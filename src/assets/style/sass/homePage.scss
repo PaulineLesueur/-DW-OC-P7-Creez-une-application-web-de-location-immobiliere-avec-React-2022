@@ -1,10 +1,13 @@
 @import 'variables';
 
 main.home-page {
+    margin: auto;
+    
     .banner {
         display: flex;
         align-items: center;
         height: 111px;
+        margin-bottom: 20px;
         overflow: hidden;
         background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), $homePageBanner;
         background-position: bottom center;
@@ -37,7 +40,7 @@ main.home-page {
 
         .banner {
         height: 223px;
-        margin: 30px auto auto auto;
+        margin: 30px auto 40px auto;
         font-size: 48px;
         }
     }

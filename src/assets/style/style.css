@@ -124,10 +124,14 @@ footer span {
     padding-bottom: 159px;
   }
 }
+main.home-page {
+  margin: auto;
+}
 main.home-page .banner {
   display: flex;
   align-items: center;
   height: 111px;
+  margin-bottom: 20px;
   overflow: hidden;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/cliff-home-page.png");
   background-position: bottom center;
@@ -156,8 +160,49 @@ main.home-page .banner p {
   }
   main.home-page .banner {
     height: 223px;
-    margin: 30px auto auto auto;
+    margin: 30px auto 40px auto;
     font-size: 48px;
+  }
+}
+.cards-container {
+  display: grid;
+  grid-row-gap: 20px;
+}
+.cards-container .card {
+  display: flex;
+  align-items: flex-end;
+  height: 255px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-size: cover;
+}
+.cards-container .card h2 {
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+
+@media (min-width: 820px) {
+  .cards-container {
+    grid-template-columns: 48% 49%;
+    grid-column-gap: 20px;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 25px;
+  }
+}
+@media (min-width: 1024px) {
+  .cards-container {
+    grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    padding: 50px;
+  }
+}
+@media (min-width: 1450px) {
+  .cards-container .card {
+    height: 340px;
   }
 }
 main.error-page {
