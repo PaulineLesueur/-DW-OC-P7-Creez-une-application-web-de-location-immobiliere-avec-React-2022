@@ -1,12 +1,13 @@
 import Header from "../components/Header";
+import React from 'react';
 
-function Housing() {
+function Rental() {
     return (
         <div>
             <Header />
-            <h1>Housing</h1>
+            <h1>Rental</h1>
         </div>
     );
 }
 
-export default Housing;
+export default Rental;

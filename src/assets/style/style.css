@@ -168,6 +168,9 @@ main.home-page .banner p {
   display: grid;
   grid-row-gap: 20px;
 }
+.cards-container a {
+  text-decoration: none;
+}
 .cards-container .card {
   display: flex;
   align-items: flex-end;
@@ -194,7 +197,7 @@ main.home-page .banner p {
 }
 @media (min-width: 1024px) {
   .cards-container {
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 30.5% 30.5% 30.5%;
     grid-column-gap: 50px;
     grid-row-gap: 50px;
     padding: 50px;
