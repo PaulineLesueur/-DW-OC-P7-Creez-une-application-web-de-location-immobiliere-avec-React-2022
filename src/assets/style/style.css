@@ -312,6 +312,58 @@ main.aboutPage img.desktop-version {
     line-height: 34px;
   }
 }
+main.rental-page h2 {
+  margin: 5px 0;
+  font-weight: 500;
+  line-height: 25px;
+}
+main.rental-page span {
+  font-size: 14px;
+  font-weight: 500;
+}
+main.rental-page li {
+  list-style-type: none;
+}
+main.rental-page .tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+main.rental-page .tags .tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 18px;
+  margin: 10px 10px 0 0;
+  padding: 0 20px;
+  border-radius: 5px;
+  background-color: #FF6060;
+  font-size: 10px;
+  color: white;
+}
+main.rental-page .rating-host {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+main.rental-page .rating-host .rating {
+  font-size: 20px;
+}
+main.rental-page .rating-host .host {
+  display: flex;
+  align-items: center;
+}
+main.rental-page .rating-host .host span {
+  font-size: 12px;
+}
+main.rental-page .rating-host .host img {
+  width: 32px;
+  height: 32px;
+  margin-left: 10px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 html, body {
   min-height: 100vh;
   font-family: "Montserrat", sans-serif;

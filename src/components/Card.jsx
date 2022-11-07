@@ -1,5 +1,4 @@
 import '../assets/style/sass/card.scss';
-
 import { Link } from 'react-router-dom';
 import Rentals from '../data.json';
 

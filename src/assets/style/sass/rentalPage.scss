@@ -1,0 +1,64 @@
+@import 'variables';
+
+main.rental-page {
+    h2 {
+        margin: 5px 0;
+        font-weight: 500;
+        line-height: 25px;
+    }
+
+    span {
+        font-size: 14px;
+        font-weight: 500;;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    .tags {
+        display: flex;
+        flex-wrap: wrap;
+
+        .tag {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 18px;
+            margin: 10px 10px 0 0;
+            padding: 0 20px;
+            border-radius: 5px;
+            background-color: $primaryColor;
+            font-size: 10px;
+            color: white;
+        }
+    }
+
+    .rating-host {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+
+        .rating {
+            font-size: 20px;
+        }
+
+        .host {
+            display:flex;
+            align-items: center;
+
+            span {
+                font-size: 12px;
+            }
+
+            img {
+                width: 32px;
+                height: 32px;
+                margin-left: 10px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+    }
+}
