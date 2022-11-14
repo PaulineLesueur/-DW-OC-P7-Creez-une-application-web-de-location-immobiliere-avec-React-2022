@@ -1,0 +1,30 @@
+@import 'variables';
+
+.images-slider {
+    margin-bottom: 10px;
+    
+    .slide-image {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 255px;
+        border-radius: 10px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .left-arrow, .right-arrow {
+        cursor: pointer;
+        font-size: 22px;
+        color: #fff;
+    }
+
+    .left-arrow {
+        margin-left: 10px;
+    }
+
+    .right-arrow {
+        margin-right: 10px;
+    }
+}

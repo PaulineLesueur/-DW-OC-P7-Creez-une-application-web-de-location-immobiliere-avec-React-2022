@@ -366,6 +366,31 @@ main.rental-page .rating-host .host img {
   object-fit: cover;
 }
 
+.images-slider {
+  margin-bottom: 10px;
+}
+.images-slider .slide-image {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 255px;
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+}
+.images-slider .left-arrow, .images-slider .right-arrow {
+  cursor: pointer;
+  font-size: 22px;
+  color: #fff;
+}
+.images-slider .left-arrow {
+  margin-left: 10px;
+}
+.images-slider .right-arrow {
+  margin-right: 10px;
+}
+
 html, body {
   min-height: 100vh;
   font-family: "Montserrat", sans-serif;
