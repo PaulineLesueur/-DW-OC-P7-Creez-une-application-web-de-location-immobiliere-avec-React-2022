@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import Footer from '../components/Footer';
 import Header from "../components/Header";
-import Section from "../components/Collapse";
+import Collapsible from "../components/Collapsible";
 import Rentals from '../data.json';
 
 function Rental() {
@@ -20,9 +20,9 @@ function Rental() {
                                     <h2>{ rental.title }</h2>
                                     <span>{ rental.location }</span>
                                     <div className="tags">
-                                        {rental.tags.map(tag => {
+                                        {rental.tags.map((tag, index) => {
                                             return(
-                                                <div className="tag">{ tag }</div>
+                                                <div key={index} className="tag">{ tag }</div>
                                             )
                                         })}
                                     </div>
@@ -36,18 +36,18 @@ function Rental() {
                                             <img src={ rental.host.picture } alt={ rental.host.name} />
                                         </div>
                                 </div>
-                                <Section title="Description">
+                                <Collapsible title="Description">
                                     { rental.description }
-                                </Section>
-                                <Section title="Équipements">
+                                </Collapsible>
+                                <Collapsible title="Équipements">
                                     <ul>
-                                        { rental.equipments.map(equipment => {
+                                        { rental.equipments.map((equipment, index) => {
                                             return(
-                                                <li>{ equipment }</li>
+                                                <li key={index}>{ equipment }</li>
                                             )
                                         }) }
                                     </ul>
-                                </Section>
+                                </Collapsible>
                             </React.Fragment>
                         )
                     })

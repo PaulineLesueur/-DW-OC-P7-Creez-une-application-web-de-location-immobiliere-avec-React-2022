@@ -49,6 +49,8 @@ main.rental-page {
             align-items: center;
 
             span {
+                width: min-content;
+                text-align: right;
                 font-size: 12px;
             }
 

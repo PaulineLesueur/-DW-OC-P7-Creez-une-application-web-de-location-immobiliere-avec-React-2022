@@ -275,7 +275,7 @@ main.aboutPage img.desktop-version {
   font-size: 13px;
   color: white;
 }
-.about-page.collapsible p.content {
+.about-page.collapsible div.content {
   min-height: 100px;
   padding: 20px 10px 10px 10px;
   background-color: #f7f7f7;
@@ -354,6 +354,8 @@ main.rental-page .rating-host .host {
   align-items: center;
 }
 main.rental-page .rating-host .host span {
+  width: min-content;
+  text-align: right;
   font-size: 12px;
 }
 main.rental-page .rating-host .host img {
