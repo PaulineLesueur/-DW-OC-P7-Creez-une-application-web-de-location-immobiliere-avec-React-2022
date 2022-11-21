@@ -1,8 +1,6 @@
 @import 'variables';
 
 main.home-page {
-    margin: auto;
-    
     .banner {
         display: flex;
         align-items: center;
@@ -36,8 +34,6 @@ main.home-page {
 
 @media (min-width: 1024px) {
     main.home-page {    
-        max-width: 1240px;
-
         .banner {
         height: 223px;
         margin: 30px auto 40px auto;

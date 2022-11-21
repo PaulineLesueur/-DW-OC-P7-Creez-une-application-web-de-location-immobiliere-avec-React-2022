@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 
 function ImageSlider({slides}) {
     const [currentIndex, setCurrentIndex] = useState(0);
+    let displayIndex = currentIndex.toString();
+    displayIndex = parseInt(displayIndex);
+
+    let displaySlides = slides.length.toString();
 
     function goToPrevious() {
         const isFirstSlide = currentIndex === 0;
@@ -18,8 +22,11 @@ function ImageSlider({slides}) {
     return(
         <React.Fragment>
             <div className="slide-image" style={{ backgroundImage: `url(${slides[currentIndex]})`}}>
-            <div className="left-arrow" style={{ visibility: slides.length === 1 ? 'hidden' : 'visible'}} onClick={goToPrevious}><i className="fa-solid fa-sharp fa-chevron-left"></i></div>
-            <div className="right-arrow" style={{ visibility: slides.length === 1 ? 'hidden' : 'visible'}} onClick={goToNext}><i className="fa-solid fa-sharp fa-chevron-right"></i></div>
+                <div className="arrows">
+                    <div className="left-arrow" style={{ visibility: slides.length === 1 ? 'hidden' : 'visible'}} onClick={goToPrevious}><i className="fa-solid fa-sharp fa-chevron-left"></i></div>
+                    <div className="right-arrow" style={{ visibility: slides.length === 1 ? 'hidden' : 'visible'}} onClick={goToNext}><i className="fa-solid fa-sharp fa-chevron-right"></i></div>
+                </div>
+                <div className="slide-index">{(displayIndex +1 + `/` + displaySlides)}</div>
             </div>
         </React.Fragment>
     )

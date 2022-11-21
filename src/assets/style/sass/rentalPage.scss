@@ -64,3 +64,65 @@ main.rental-page {
         }
     }
 }
+
+@media (min-width: 740px) {
+    .rental-informations {
+        display: flex;
+        justify-content: space-between;
+
+        .rental-basics {
+            width: 80%;
+        }
+    }
+
+    .rating-host {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (min-width: 1024px) {
+    main.rental-page {
+        h2 {
+            line-height: initial;
+        }
+
+        span, .rating-host .host span {
+            font-size: 18px;
+        }
+
+        .tags .tag {
+            height: 25px;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+
+        .rating-host .host img {
+            width: 64px;
+            height: 64px;
+        }
+
+        .rental-collapsible {
+            display: grid;
+            grid-template-columns: 46% 47%;
+            grid-column-gap: 20px;
+
+            .title, .collapsible {
+                font-size: 18px;
+
+                .content {
+                    padding: 30px 20px 20px 20px;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    main.rental-page {
+        .rental-collapsible {
+            grid-template-columns: 47% 47%;
+            grid-column-gap: 76px;
+        }
+    }
+}

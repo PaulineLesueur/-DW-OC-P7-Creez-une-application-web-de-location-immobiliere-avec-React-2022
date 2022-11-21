@@ -124,9 +124,6 @@ footer span {
     padding-bottom: 159px;
   }
 }
-main.home-page {
-  margin: auto;
-}
 main.home-page .banner {
   display: flex;
   align-items: center;
@@ -155,9 +152,6 @@ main.home-page .banner p {
   }
 }
 @media (min-width: 1024px) {
-  main.home-page {
-    max-width: 1240px;
-  }
   main.home-page .banner {
     height: 223px;
     margin: 30px auto 40px auto;
@@ -195,15 +189,13 @@ main.home-page .banner p {
     border-radius: 25px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1450px) {
   .cards-container {
     grid-template-columns: 30.5% 30.5% 30.5%;
     grid-column-gap: 50px;
     grid-row-gap: 50px;
     padding: 50px;
   }
-}
-@media (min-width: 1450px) {
   .cards-container .card {
     height: 340px;
   }
@@ -244,9 +236,6 @@ main .error-page a {
   main .error-page a {
     font-size: 18px;
   }
-}
-main.aboutPage {
-  margin: auto;
 }
 main.aboutPage img {
   width: 100%;
@@ -298,7 +287,6 @@ main.aboutPage img.desktop-version {
 }
 @media (min-width: 1024px) {
   .about-page.container-collapsible {
-    max-width: 1024px;
     padding: 0 100px;
   }
   .about-page.collapsible button {
@@ -307,7 +295,7 @@ main.aboutPage img.desktop-version {
     padding: 0px 20px;
     font-size: 24px;
   }
-  .about-page.collapsible p.content {
+  .about-page.collapsible div.content {
     padding: 30px 20px 20px 20px;
     line-height: 34px;
   }
@@ -366,18 +354,78 @@ main.rental-page .rating-host .host img {
   object-fit: cover;
 }
 
+@media (min-width: 740px) {
+  .rental-informations {
+    display: flex;
+    justify-content: space-between;
+  }
+  .rental-informations .rental-basics {
+    width: 80%;
+  }
+  .rating-host {
+    flex-direction: column-reverse;
+  }
+}
+@media (min-width: 1024px) {
+  main.rental-page h2 {
+    line-height: initial;
+  }
+  main.rental-page span, main.rental-page .rating-host .host span {
+    font-size: 18px;
+  }
+  main.rental-page .tags .tag {
+    height: 25px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  main.rental-page .rating-host .host img {
+    width: 64px;
+    height: 64px;
+  }
+  main.rental-page .rental-collapsible {
+    display: grid;
+    grid-template-columns: 46% 47%;
+    grid-column-gap: 20px;
+  }
+  main.rental-page .rental-collapsible .title, main.rental-page .rental-collapsible .collapsible {
+    font-size: 18px;
+  }
+  main.rental-page .rental-collapsible .title .content, main.rental-page .rental-collapsible .collapsible .content {
+    padding: 30px 20px 20px 20px;
+    line-height: 25px;
+  }
+}
+@media (min-width: 1024px) {
+  main.rental-page .rental-collapsible {
+    grid-template-columns: 47% 47%;
+    grid-column-gap: 76px;
+  }
+}
 .images-slider {
   margin-bottom: 10px;
 }
 .images-slider .slide-image {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   width: 100%;
   height: 255px;
   border-radius: 10px;
   background-position: center;
   background-size: cover;
+}
+.images-slider .arrows {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.images-slider .slide-index {
+  position: absolute;
+  margin-top: 225px;
+  font-size: 18px;
+  color: white;
 }
 .images-slider .left-arrow, .images-slider .right-arrow {
   cursor: pointer;
@@ -391,6 +439,27 @@ main.rental-page .rating-host .host img {
   margin-right: 10px;
 }
 
+@media (min-width: 1024px) {
+  .images-slider {
+    margin-bottom: 30px;
+  }
+  .images-slider .slide-index {
+    margin-top: 380px;
+  }
+  .images-slider .right-arrow {
+    margin-right: 20px;
+  }
+  .images-slider .left-arrow {
+    margin-left: 20px;
+  }
+  .images-slider .slide-image {
+    height: 415px;
+    border-radius: 25px;
+  }
+  .images-slider .slide-image .fa-solid, .images-slider .slide-image .fas {
+    font-size: 70px;
+  }
+}
 html, body {
   min-height: 100vh;
   font-family: "Montserrat", sans-serif;
@@ -403,6 +472,9 @@ html #root, body #root {
   flex-direction: column;
 }
 html main, body main {
+  min-width: 89%;
+  max-width: 89%;
+  margin: auto;
   flex-grow: 1;
   padding: 0 20px 20px 20px;
 }
@@ -412,6 +484,15 @@ html main, body main {
     font-size: 24px;
   }
   body main {
+    min-width: 80%;
+    max-width: 80%;
+    padding: 0px 100px 40px 100px;
+  }
+}
+@media (min-width: 1240px) {
+  body main {
+    min-width: 70%;
+    max-width: 70%;
     padding: 0px 100px 40px 100px;
   }
 }

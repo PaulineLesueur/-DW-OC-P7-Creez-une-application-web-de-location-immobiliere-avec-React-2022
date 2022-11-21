@@ -18,41 +18,45 @@ function Rental() {
                         const slides = rental.pictures;
                         return(
                             <React.Fragment key={ rental.id }>
-                                <div className="rental-basics">
-                                    <div className="images-slider">
-                                        <ImageSlider slides={slides} />
+                                <div className="images-slider">
+                                    <ImageSlider slides={slides} />
+                                </div>
+                                <div className="rental-informations">
+                                    <div className="rental-basics">
+                                        <h2>{ rental.title }</h2>
+                                        <span>{ rental.location }</span>
+                                        <div className="tags">
+                                            {rental.tags.map((tag, index) => {
+                                                return(
+                                                    <div key={index} className="tag">{ tag }</div>
+                                                )
+                                            })}
+                                        </div>
                                     </div>
-                                    <h2>{ rental.title }</h2>
-                                    <span>{ rental.location }</span>
-                                    <div className="tags">
-                                        {rental.tags.map((tag, index) => {
-                                            return(
-                                                <div key={index} className="tag">{ tag }</div>
-                                            )
-                                        })}
+                                    <div className="rating-host">
+                                            <div className="rating">
+                                                ★ ★ ★ ★ ★
+                                            </div>
+                                            <div className="host">
+                                                <span>{ rental.host.name }</span>
+                                                <img src={ rental.host.picture } alt={ rental.host.name} />
+                                            </div>
                                     </div>
                                 </div>
-                                <div className="rating-host">
-                                        <div className="rating">
-                                            ★ ★ ★ ★ ★
-                                        </div>
-                                        <div className="host">
-                                            <span>{ rental.host.name }</span>
-                                            <img src={ rental.host.picture } alt={ rental.host.name} />
-                                        </div>
+                                <div className="rental-collapsible">
+                                    <Collapsible title="Description">
+                                        { rental.description }
+                                    </Collapsible>
+                                    <Collapsible title="Équipements">
+                                        <ul>
+                                            { rental.equipments.map((equipment, index) => {
+                                                return(
+                                                    <li key={index}>{ equipment }</li>
+                                                )
+                                            }) }
+                                        </ul>
+                                    </Collapsible>
                                 </div>
-                                <Collapsible title="Description">
-                                    { rental.description }
-                                </Collapsible>
-                                <Collapsible title="Équipements">
-                                    <ul>
-                                        { rental.equipments.map((equipment, index) => {
-                                            return(
-                                                <li key={index}>{ equipment }</li>
-                                            )
-                                        }) }
-                                    </ul>
-                                </Collapsible>
                             </React.Fragment>
                         )
                     })

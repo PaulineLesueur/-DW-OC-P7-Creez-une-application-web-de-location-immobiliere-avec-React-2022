@@ -23,6 +23,9 @@ html, body {
     }
 
     main {
+        min-width: 89%;
+        max-width: 89%;
+        margin: auto;
         flex-grow: 1;
         padding: 0 20px 20px 20px;
     }
@@ -33,6 +36,18 @@ html, body {
         font-size: 24px;
 
         main {
+            min-width: 80%;
+            max-width: 80%;
+            padding: 0px 100px 40px 100px;
+        }
+    }
+}
+
+@media (min-width: 1240px) {
+    body {
+        main {
+            min-width: 70%;
+            max-width: 70%;
             padding: 0px 100px 40px 100px;
         }
     }

@@ -35,17 +35,15 @@
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1450px) {
     .cards-container {
         grid-template-columns: 30.5% 30.5% 30.5%;
         grid-column-gap: 50px;
         grid-row-gap: 50px;
         padding: 50px;
-    }
-}
 
-@media (min-width: 1450px) {
-    .cards-container .card{
-        height: 340px;
+        .card{
+            height: 340px;
+        }
     }
 }
