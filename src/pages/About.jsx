@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Collapsible from "../components/Collapsible"
+import Collapsible from "../components/Collapsible";
 
 function About() {
     return (
