@@ -5,11 +5,14 @@ import Header from "../components/Header";
 import ImageSlider from "../components/ImageSlider";
 import Collapsible from "../components/Collapsible";
 import Rentals from '../data.json';
+import ErrorPage from './ErrorPage';
+import Rating from '../components/Rating';
 
 function Rental() {
     const { id } = useParams();
+    const idExists = Rentals.find(e => e.id === id);
 
-    return (
+    return idExists ? (
         <React.Fragment>
             <Header />
             <main className="rental-page">
@@ -35,7 +38,9 @@ function Rental() {
                                     </div>
                                     <div className="rating-host">
                                             <div className="rating">
-                                                ★ ★ ★ ★ ★
+                                                <Rating>
+                                                    { rental.rating }
+                                                </Rating>
                                             </div>
                                             <div className="host">
                                                 <span>{ rental.host.name }</span>
@@ -64,7 +69,7 @@ function Rental() {
             </main>
             <Footer />
         </React.Fragment>
-    );
+    ) : <ErrorPage />;
 }
 
 export default Rental;

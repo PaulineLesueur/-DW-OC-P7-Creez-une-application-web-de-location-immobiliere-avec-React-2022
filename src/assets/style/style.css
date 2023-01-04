@@ -335,7 +335,14 @@ main.rental-page .rating-host {
   margin-top: 15px;
 }
 main.rental-page .rating-host .rating {
-  font-size: 20px;
+  font-size: 15px;
+  letter-spacing: 5px;
+}
+main.rental-page .rating-host .rating-star {
+  color: #e3e3e3;
+}
+main.rental-page .rating-host .rating-star.colored {
+  color: #FF6060;
 }
 main.rental-page .rating-host .host {
   display: flex;
@@ -355,15 +362,17 @@ main.rental-page .rating-host .host img {
 }
 
 @media (min-width: 740px) {
-  .rental-informations {
+  main.rental-page .rental-informations {
     display: flex;
     justify-content: space-between;
   }
-  .rental-informations .rental-basics {
-    width: 80%;
+  main.rental-page .rental-informations .rental-basics {
+    width: 75%;
   }
-  .rating-host {
+  main.rental-page .rating-host {
+    align-items: flex-end;
     flex-direction: column-reverse;
+    width: 25%;
   }
 }
 @media (min-width: 1024px) {
@@ -373,6 +382,9 @@ main.rental-page .rating-host .host img {
   main.rental-page span, main.rental-page .rating-host .host span {
     font-size: 18px;
   }
+  main.rental-page .tags {
+    margin-top: 20px;
+  }
   main.rental-page .tags .tag {
     height: 25px;
     border-radius: 10px;
@@ -381,6 +393,11 @@ main.rental-page .rating-host .host img {
   main.rental-page .rating-host .host img {
     width: 64px;
     height: 64px;
+  }
+  main.rental-page .rating-host .rating {
+    margin: 20px -10px 0 0;
+    font-size: 30px;
+    letter-spacing: 10px;
   }
   main.rental-page .rental-collapsible {
     display: grid;

@@ -1,11 +1,11 @@
 import { slide as Menu } from 'react-burger-menu';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function Burger() {
     return (
         <Menu right>
-            <Link to="/">Accueil</Link>
-            <Link to="/about">A propos</Link>
+            <NavLink style={({ isActive }) => (isActive ? {textDecoration: 'underline'} : {textDecoration: 'none'})} to="/" end>Accueil</NavLink>
+            <NavLink style={({ isActive }) => (isActive ? {textDecoration: 'underline'} : {textDecoration: 'none'})} to="/about">A propos</NavLink>
       </Menu>
     )
 }

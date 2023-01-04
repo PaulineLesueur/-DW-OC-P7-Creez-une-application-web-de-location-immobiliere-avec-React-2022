@@ -41,7 +41,16 @@ main.rental-page {
         margin-top: 15px;
 
         .rating {
-            font-size: 20px;
+            font-size: 15px;
+            letter-spacing: 5px;
+        }
+
+        .rating-star {
+            color: #e3e3e3;
+
+            &.colored {
+                color: $primaryColor;
+            }
         }
 
         .host {
@@ -66,17 +75,21 @@ main.rental-page {
 }
 
 @media (min-width: 740px) {
-    .rental-informations {
-        display: flex;
-        justify-content: space-between;
-
-        .rental-basics {
-            width: 80%;
+    main.rental-page {
+        .rental-informations {
+            display: flex;
+            justify-content: space-between;
+    
+            .rental-basics {
+                width: 75%;
+            }
         }
-    }
-
-    .rating-host {
-        flex-direction: column-reverse;
+    
+        .rating-host {
+            align-items: flex-end;
+            flex-direction: column-reverse;
+            width: 25%;
+        }
     }
 }
 
@@ -90,15 +103,27 @@ main.rental-page {
             font-size: 18px;
         }
 
-        .tags .tag {
-            height: 25px;
-            border-radius: 10px;
-            font-size: 14px;
+        .tags {
+            margin-top: 20px;
+
+            .tag {
+                height: 25px;
+                border-radius: 10px;
+                font-size: 14px;
+            }
         }
 
-        .rating-host .host img {
-            width: 64px;
-            height: 64px;
+        .rating-host {
+            .host img {
+                width: 64px;
+                height: 64px;
+            }
+
+            .rating {
+                margin: 20px -10px 0 0;
+                font-size: 30px;
+                letter-spacing: 10px;
+            }
         }
 
         .rental-collapsible {
