@@ -1,5 +1,4 @@
 import { NavLink } from 'react-router-dom';
-import Burger from './BurgerMenu';
 
 function Header() {
     return (
@@ -20,9 +19,6 @@ function Header() {
                 <path d="M106.266 34.4632L84.3497 21.6785L72.1945 14.6376L60.2234 35.5749L60.4076 55.2153L82.1396 68L84.3497 66.703V48.1744L94.1106 30.9428L104.056 36.6866V55.2153L106.266 53.9183V34.4632Z" fill="#FF6060"/>
                 </svg>
             </NavLink>
-            <div className='burger-menu'>
-                <Burger />
-            </div>
             <nav className="desktop-nav">
                 <NavLink style={({ isActive }) => (isActive ? {textDecoration: 'underline'} : {textDecoration: 'none'})} to="/" end>Accueil</NavLink>
                 <NavLink style={({ isActive }) => (isActive ? {textDecoration: 'underline'} : {textDecoration: 'none'})} to="/about">A propos</NavLink>

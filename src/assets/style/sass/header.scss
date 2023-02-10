@@ -18,12 +18,8 @@ header {
             color: $primaryColor;
         }
 
-        &.desktop-nav {
-            display: none;
-
-            a:nth-child(2) {
-                margin-left: 57px;
-            }
+        a:nth-child(2) {
+            margin-left: 10px;
         }
     }
 }
@@ -39,16 +35,15 @@ header {
         svg.mobile-version {
             display: none;
         }
-        nav.desktop-nav {
-            display: block;
-            
+        nav {
+
             a {
                 text-transform: none;
             }
-        }
 
-        .burger-menu {
-            display: none;
+            a:nth-child(2) {
+                margin-left: 57px;
+            }
         }
     }
 }
