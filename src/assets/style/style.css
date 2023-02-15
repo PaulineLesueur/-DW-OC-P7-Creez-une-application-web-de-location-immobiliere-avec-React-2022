@@ -101,19 +101,30 @@ main.home-page .banner p {
 .cards-container a {
   text-decoration: none;
 }
-.cards-container .card {
-  display: flex;
-  align-items: flex-end;
+.cards-container .card-container {
+  position: relative;
   height: 255px;
-  overflow: hidden;
   border-radius: 10px;
-  background-size: cover;
+  overflow: hidden;
 }
-.cards-container .card h2 {
+.cards-container .card-container:hover .card {
+  transform: scale(1.3);
+  transition: all 1s;
+}
+.cards-container .card-container h2 {
+  position: absolute;
+  bottom: 0;
   padding: 20px;
   font-size: 18px;
   font-weight: 500;
   color: white;
+}
+.cards-container .card {
+  display: flex;
+  align-items: flex-end;
+  height: 255px;
+  background-size: cover;
+  transition: all 0.4s;
 }
 
 @media (min-width: 820px) {
@@ -132,7 +143,7 @@ main.home-page .banner p {
     grid-row-gap: 50px;
     padding: 50px;
   }
-  .cards-container .card {
+  .cards-container .card-container, .cards-container .card {
     height: 340px;
   }
 }

@@ -9,8 +9,10 @@ function Card() {
                 Rentals.map( rental => {
                     return (
                         <Link to={`/rental/${ rental.id }`} key={ rental.id }>
-                            <div className="card" style={{ backgroundImage: `linear-gradient(transparent,rgba(0, 0, 0, 0.6) 85%), url(${rental.cover})` }} key={ rental.id }>
-                                <h2>{ rental.title }</h2>
+                            <div className="card-container">
+                                <div className="card" style={{ backgroundImage: `linear-gradient(transparent,rgba(0, 0, 0, 0.6) 85%), url(${rental.cover})` }} key={ rental.id }> 
+                                </div> 
+                                <h2>{ rental.title }</h2>                               
                             </div>
                         </Link>
                     )
